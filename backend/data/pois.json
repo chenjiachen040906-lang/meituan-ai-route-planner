@@ -1,0 +1,462 @@
+[
+  {
+    "id": "poi_sz_001",
+    "name": "Moka Bros",
+    "category": "餐饮",
+    "sub_category": "西餐轻食",
+    "rating": 4.7,
+    "avg_cost": 85,
+    "location": {
+      "lat": 39.9342,
+      "lng": 116.4544,
+      "address": "朝阳区三里屯太古里南区S8-12"
+    },
+    "business_hours": "10:00-22:00",
+    "tags": ["拍照", "轻食", "网红", "约会", "环境好"],
+    "ugc_highlights": [
+      "光线超棒，随便拍都出片",
+      "蛋白质碗很好吃，健身人士友好",
+      "周末人多，建议工作日下午来"
+    ],
+    "avg_wait_minutes": 20,
+    "best_visit_time": "下午",
+    "suitable_for": ["情侣", "朋友聚会", "独处"]
+  },
+  {
+    "id": "poi_sz_002",
+    "name": "局气",
+    "category": "餐饮",
+    "sub_category": "北京菜",
+    "rating": 4.6,
+    "avg_cost": 95,
+    "location": {
+      "lat": 39.9350,
+      "lng": 116.4530,
+      "address": "朝阳区三里屯路19号"
+    },
+    "business_hours": "11:00-21:30",
+    "tags": ["北京菜", "聚餐", "特色菜", "排队少"],
+    "ugc_highlights": [
+      "蜂窝煤炒饭必点，仪式感拉满",
+      "兔爷土豆泥造型可爱",
+      "服务态度很好，等位有小食"
+    ],
+    "avg_wait_minutes": 15,
+    "best_visit_time": "午餐/晚餐",
+    "suitable_for": ["朋友聚会", "家庭聚餐", "游客"]
+  },
+  {
+    "id": "poi_sz_003",
+    "name": "三里屯太古里",
+    "category": "娱乐",
+    "sub_category": "购物逛街",
+    "rating": 4.5,
+    "avg_cost": 0,
+    "location": {
+      "lat": 39.9338,
+      "lng": 116.4550,
+      "address": "朝阳区三里屯太古里"
+    },
+    "business_hours": "10:00-22:00",
+    "tags": ["购物", "拍照", "逛街", "潮牌", "免费"],
+    "ugc_highlights": [
+      "开放式街区，拍照圣地",
+      "各类潮牌聚集，适合逛一下午",
+      "晚上灯光很美，氛围感强"
+    ],
+    "avg_wait_minutes": 0,
+    "best_visit_time": "下午/晚上",
+    "suitable_for": ["情侣", "朋友聚会", "独处"]
+  },
+  {
+    "id": "poi_sz_004",
+    "name": "Page One 书店",
+    "category": "文化",
+    "sub_category": "书店",
+    "rating": 4.4,
+    "avg_cost": 0,
+    "location": {
+      "lat": 39.9345,
+      "lng": 116.4540,
+      "address": "朝阳区三里屯太古里南区"
+    },
+    "business_hours": "10:00-22:00",
+    "tags": ["文化", "拍照", "安静", "免费", "约会"],
+    "ugc_highlights": [
+      "设计感很强的书店，适合拍照",
+      "有很多外文原版书",
+      "人少安静，适合消磨时间"
+    ],
+    "avg_wait_minutes": 0,
+    "best_visit_time": "下午",
+    "suitable_for": ["独处", "情侣", "文艺青年"]
+  },
+  {
+    "id": "poi_sz_005",
+    "name": "京A Taproom",
+    "category": "餐饮",
+    "sub_category": "精酿酒吧",
+    "rating": 4.5,
+    "avg_cost": 120,
+    "location": {
+      "lat": 39.9335,
+      "lng": 116.4555,
+      "address": "朝阳区三里屯太古里南区"
+    },
+    "business_hours": "11:00-02:00",
+    "tags": ["夜生活", "精酿", "约会", "拍照", "环境好"],
+    "ugc_highlights": [
+      "精酿种类很多，口味不错",
+      "环境很有氛围感，适合约会",
+      "花生米免费续，很下酒"
+    ],
+    "avg_wait_minutes": 10,
+    "best_visit_time": "晚上",
+    "suitable_for": ["情侣", "朋友聚会"]
+  },
+  {
+    "id": "poi_sz_006",
+    "name": "Wagas",
+    "category": "餐饮",
+    "sub_category": "西餐轻食",
+    "rating": 4.3,
+    "avg_cost": 75,
+    "location": {
+      "lat": 39.9340,
+      "lng": 116.4548,
+      "address": "朝阳区三里屯太古里北区"
+    },
+    "business_hours": "08:00-22:00",
+    "tags": ["轻食", "健康", "快餐", "性价比高"],
+    "ugc_highlights": [
+      "沙拉新鲜，分量足",
+      "出餐快，适合赶时间",
+      "环境干净整洁"
+    ],
+    "avg_wait_minutes": 5,
+    "best_visit_time": "午餐",
+    "suitable_for": ["独处", "朋友聚会"]
+  },
+  {
+    "id": "poi_sz_007",
+    "name": "那里花园",
+    "category": "娱乐",
+    "sub_category": "酒吧街区",
+    "rating": 4.2,
+    "avg_cost": 100,
+    "location": {
+      "lat": 39.9332,
+      "lng": 116.4560,
+      "address": "朝阳区三里屯北路"
+    },
+    "business_hours": "18:00-02:00",
+    "tags": ["夜生活", "酒吧", "氛围好", "拍照"],
+    "ugc_highlights": [
+      "露天花园氛围感拉满",
+      "周末晚上人很多很热闹",
+      "适合朋友小聚聊天"
+    ],
+    "avg_wait_minutes": 15,
+    "best_visit_time": "晚上",
+    "suitable_for": ["朋友聚会", "情侣"]
+  },
+  {
+    "id": "poi_sz_008",
+    "name": "TRB Hutong",
+    "category": "餐饮",
+    "sub_category": "法餐",
+    "rating": 4.8,
+    "avg_cost": 300,
+    "location": {
+      "lat": 39.9355,
+      "lng": 116.4525,
+      "address": "朝阳区三里屯路1号"
+    },
+    "business_hours": "11:30-14:30,17:30-22:00",
+    "tags": ["高端", "约会", "法餐", "环境好", "拍照"],
+    "ugc_highlights": [
+      "环境优雅，服务一流",
+      "菜品精致，摆盘好看",
+      "价格偏高但体验值得"
+    ],
+    "avg_wait_minutes": 30,
+    "best_visit_time": "晚餐",
+    "suitable_for": ["情侣", "商务宴请"]
+  },
+  {
+    "id": "poi_sz_009",
+    "name": "Blue Frog 蓝蛙",
+    "category": "餐饮",
+    "sub_category": "西餐",
+    "rating": 4.2,
+    "avg_cost": 110,
+    "location": {
+      "lat": 39.9343,
+      "lng": 116.4538,
+      "address": "朝阳区三里屯太古里南区"
+    },
+    "business_hours": "10:00-23:00",
+    "tags": ["西餐", "汉堡", "聚餐", "性价比高"],
+    "ugc_highlights": [
+      "汉堡很大一个，肉饼多汁",
+      "鸡尾酒买一送一活动很划算",
+      "位置好找，环境舒适"
+    ],
+    "avg_wait_minutes": 10,
+    "best_visit_time": "午餐/晚餐",
+    "suitable_for": ["朋友聚会", "家庭聚餐"]
+  },
+  {
+    "id": "poi_sz_010",
+    "name": "三里屯SOHO",
+    "category": "娱乐",
+    "sub_category": "综合商业",
+    "rating": 4.1,
+    "avg_cost": 0,
+    "location": {
+      "lat": 39.9325,
+      "lng": 116.4535,
+      "address": "朝阳区工体北路8号"
+    },
+    "business_hours": "00:00-24:00",
+    "tags": ["购物", "拍照", "免费", "逛街"],
+    "ugc_highlights": [
+      "建筑造型独特，适合拍照",
+      "有一些小众设计师店铺",
+      "人比太古里少，逛起来舒服"
+    ],
+    "avg_wait_minutes": 0,
+    "best_visit_time": "下午",
+    "suitable_for": ["独处", "朋友聚会"]
+  },
+  {
+    "id": "poi_sz_011",
+    "name": "海底捞(三里屯店)",
+    "category": "餐饮",
+    "sub_category": "火锅",
+    "rating": 4.4,
+    "avg_cost": 130,
+    "location": {
+      "lat": 39.9348,
+      "lng": 116.4552,
+      "address": "朝阳区三里屯路19号"
+    },
+    "business_hours": "09:00-次日07:00",
+    "tags": ["火锅", "聚餐", "服务好", "排队"],
+    "ugc_highlights": [
+      "服务没话说，等位有美甲",
+      "锅底味道不错，菜品新鲜",
+      "适合多人聚餐，氛围热闹"
+    ],
+    "avg_wait_minutes": 40,
+    "best_visit_time": "晚餐",
+    "suitable_for": ["朋友聚会", "家庭聚餐"]
+  },
+  {
+    "id": "poi_sz_012",
+    "name": "Cococean",
+    "category": "餐饮",
+    "sub_category": "甜品饮品",
+    "rating": 4.3,
+    "avg_cost": 35,
+    "location": {
+      "lat": 39.9336,
+      "lng": 116.4542,
+      "address": "朝阳区三里屯太古里南区"
+    },
+    "business_hours": "10:00-22:00",
+    "tags": ["甜品", "拍照", "网红", "性价比高"],
+    "ugc_highlights": [
+      "椰子水很新鲜，夏天必喝",
+      "包装好看，适合拍照打卡",
+      "价格不贵，排队也不久"
+    ],
+    "avg_wait_minutes": 10,
+    "best_visit_time": "下午",
+    "suitable_for": ["情侣", "朋友聚会", "独处"]
+  },
+  {
+    "id": "poi_sz_013",
+    "name": "朝阳公园",
+    "category": "娱乐",
+    "sub_category": "公园",
+    "rating": 4.3,
+    "avg_cost": 5,
+    "location": {
+      "lat": 39.9380,
+      "lng": 116.4730,
+      "address": "朝阳区朝阳公园南路1号"
+    },
+    "business_hours": "06:00-21:00",
+    "tags": ["户外", "拍照", "亲子", "休闲", "免费"],
+    "ugc_highlights": [
+      "面积很大，适合散步跑步",
+      "春天樱花很美，拍照绝佳",
+      "有游乐设施，适合带小朋友"
+    ],
+    "avg_wait_minutes": 0,
+    "best_visit_time": "上午/下午",
+    "suitable_for": ["家庭", "情侣", "独处"]
+  },
+  {
+    "id": "poi_sz_014",
+    "name": "Ala House",
+    "category": "餐饮",
+    "sub_category": "咖啡厅",
+    "rating": 4.5,
+    "avg_cost": 55,
+    "location": {
+      "lat": 39.9341,
+      "lng": 116.4546,
+      "address": "朝阳区三里屯太古里南区"
+    },
+    "business_hours": "09:00-21:00",
+    "tags": ["咖啡", "拍照", "安静", "环境好", "约会"],
+    "ugc_highlights": [
+      "工业风装修，拍照很出片",
+      "手冲咖啡品质不错",
+      "座位间距大，聊天不拥挤"
+    ],
+    "avg_wait_minutes": 5,
+    "best_visit_time": "上午/下午",
+    "suitable_for": ["独处", "情侣", "朋友聚会"]
+  },
+  {
+    "id": "poi_sz_015",
+    "name": "火烧云",
+    "category": "餐饮",
+    "sub_category": "云南菜",
+    "rating": 4.6,
+    "avg_cost": 88,
+    "location": {
+      "lat": 39.9352,
+      "lng": 116.4528,
+      "address": "朝阳区三里屯北路"
+    },
+    "business_hours": "11:00-22:00",
+    "tags": ["云南菜", "排队", "网红", "美食"],
+    "ugc_highlights": [
+      "铜锅米线必点，汤底鲜美",
+      "排队很久但值得，建议提前取号",
+      "环境有云南特色，氛围不错"
+    ],
+    "avg_wait_minutes": 45,
+    "best_visit_time": "午餐/晚餐",
+    "suitable_for": ["朋友聚会", "情侣"]
+  },
+  {
+    "id": "poi_nlgx_001",
+    "name": "文宇奶酪店",
+    "category": "餐饮",
+    "sub_category": "甜品",
+    "rating": 4.4,
+    "avg_cost": 25,
+    "location": {
+      "lat": 39.9370,
+      "lng": 116.4030,
+      "address": "东城区南锣鼓巷49号"
+    },
+    "business_hours": "10:00-22:00",
+    "tags": ["甜品", "网红", "老北京", "性价比高", "拍照"],
+    "ugc_highlights": [
+      "原味奶酪是招牌，口感细腻",
+      "价格便宜，排队人多",
+      "南锣鼓巷必打卡的小吃"
+    ],
+    "avg_wait_minutes": 15,
+    "best_visit_time": "下午",
+    "suitable_for": ["朋友聚会", "游客", "独处"]
+  },
+  {
+    "id": "poi_nlgx_002",
+    "name": "南锣鼓巷",
+    "category": "娱乐",
+    "sub_category": "历史街区",
+    "rating": 4.0,
+    "avg_cost": 0,
+    "location": {
+      "lat": 39.9375,
+      "lng": 116.4025,
+      "address": "东城区南锣鼓巷"
+    },
+    "business_hours": "00:00-24:00",
+    "tags": ["文化", "拍照", "免费", "逛街", "老北京"],
+    "ugc_highlights": [
+      "老北京胡同风情，适合拍照",
+      "小店很多，可以淘到有趣的东西",
+      "周末人非常多，建议工作日来"
+    ],
+    "avg_wait_minutes": 0,
+    "best_visit_time": "上午/下午",
+    "suitable_for": ["游客", "朋友聚会", "情侣"]
+  },
+  {
+    "id": "poi_nlgx_003",
+    "name": "鬼味烤翅",
+    "category": "餐饮",
+    "sub_category": "烧烤",
+    "rating": 4.3,
+    "avg_cost": 65,
+    "location": {
+      "lat": 39.9368,
+      "lng": 116.4035,
+      "address": "东城区南锣鼓巷"
+    },
+    "business_hours": "11:00-23:00",
+    "tags": ["烧烤", "小吃", "性价比高", "美食"],
+    "ugc_highlights": [
+      "烤翅味道很特别，有多种口味",
+      "价格实惠，适合边走边吃",
+      "店面不大但很有特色"
+    ],
+    "avg_wait_minutes": 10,
+    "best_visit_time": "下午/晚上",
+    "suitable_for": ["朋友聚会", "游客"]
+  },
+  {
+    "id": "poi_wfks_001",
+    "name": "五道口购物中心",
+    "category": "娱乐",
+    "sub_category": "购物",
+    "rating": 4.1,
+    "avg_cost": 0,
+    "location": {
+      "lat": 39.9920,
+      "lng": 116.3380,
+      "address": "海淀区成府路28号"
+    },
+    "business_hours": "10:00-22:00",
+    "tags": ["购物", "免费", "逛街", "电影"],
+    "ugc_highlights": [
+      "离大学城近，年轻人多",
+      "有电影院，可以顺便看个电影",
+      "餐饮选择多，价格适中"
+    ],
+    "avg_wait_minutes": 0,
+    "best_visit_time": "下午",
+    "suitable_for": ["朋友聚会", "情侣"]
+  },
+  {
+    "id": "poi_wfks_002",
+    "name": "雕刻时光咖啡馆",
+    "category": "餐饮",
+    "sub_category": "咖啡厅",
+    "rating": 4.2,
+    "avg_cost": 50,
+    "location": {
+      "lat": 39.9915,
+      "lng": 116.3375,
+      "address": "海淀区成府路"
+    },
+    "business_hours": "09:00-23:00",
+    "tags": ["咖啡", "安静", "看书", "环境好"],
+    "ugc_highlights": [
+      "老牌咖啡馆，环境安静",
+      "适合看书学习，氛围好",
+      "咖啡和简餐都不错"
+    ],
+    "avg_wait_minutes": 5,
+    "best_visit_time": "下午",
+    "suitable_for": ["独处", "朋友聚会"]
+  }
+]
