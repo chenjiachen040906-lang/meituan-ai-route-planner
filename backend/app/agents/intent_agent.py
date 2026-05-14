@@ -1,5 +1,5 @@
 import json
-from anthropic import Anthropic
+from openai import OpenAI
 from app.core.config import get_settings
 from app.models.schemas import Constraints
 
@@ -20,16 +20,18 @@ SYSTEM_PROMPT = """你是一个出行意图理解助手。从用户的自然语�
 async def understand_intent(user_input: str, constraints: Constraints) -> dict:
     """从用户输入中提取结构化意图信息，并与显式约束合并。"""
     settings = get_settings()
-    client = Anthropic(api_key=settings.anthropic_api_key)
+    client = OpenAI(api_key=settings.openai_api_key, base_url=settings.openai_base_url)
 
-    response = client.messages.create(
+    response = client.chat.completions.create(
         model=settings.model_name,
         max_tokens=500,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": user_input}],
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_input},
+        ],
     )
 
-    raw = response.content[0].text.strip()
+    raw = response.choices[0].message.content.strip()
     if raw.startswith("```"):
         raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
 

@@ -1,5 +1,5 @@
 import json
-from anthropic import Anthropic
+from openai import OpenAI
 from app.core.config import get_settings
 from app.models.schemas import POI, RouteResponse, Location
 
@@ -35,7 +35,7 @@ SYSTEM_PROMPT = """你是一个本地路线规划专家。根据用户意图和�
 def plan_route(intent: dict, candidate_pois: list[POI]) -> RouteResponse:
     """使用 LLM 规划最优路线。"""
     settings = get_settings()
-    client = Anthropic(api_key=settings.anthropic_api_key)
+    client = OpenAI(api_key=settings.openai_api_key, base_url=settings.openai_base_url)
 
     # 构建候选 POI 信息
     poi_info = []
@@ -62,14 +62,16 @@ def plan_route(intent: dict, candidate_pois: list[POI]) -> RouteResponse:
 
 请规划最优路线。"""
 
-    response = client.messages.create(
+    response = client.chat.completions.create(
         model=settings.model_name,
         max_tokens=2000,
-        system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": user_msg}],
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_msg},
+        ],
     )
 
-    raw = response.content[0].text.strip()
+    raw = response.choices[0].message.content.strip()
     if raw.startswith("```"):
         raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
 
@@ -102,7 +104,6 @@ def plan_route(intent: dict, candidate_pois: list[POI]) -> RouteResponse:
         total_cost += base.avg_cost
 
     total_minutes = sum(p.duration_minutes for p in full_pois)
-    people = intent.get("people_count", 1)
 
     return RouteResponse(
         success=True,
