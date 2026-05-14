@@ -24,14 +24,23 @@ async def understand_intent(user_input: str, constraints: Constraints) -> dict:
 
     response = client.chat.completions.create(
         model=settings.model_name,
-        max_tokens=500,
+        max_tokens=4000,
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_input},
         ],
     )
 
-    raw = response.choices[0].message.content.strip()
+    msg = response.choices[0].message
+    raw = (msg.content or "").strip()
+
+    # 某些模型把内容放在 reasoning_content 里
+    if not raw and hasattr(msg, "reasoning_content") and msg.reasoning_content:
+        import re
+        json_match = re.search(r'\{[^{}]*\}', msg.reasoning_content, re.DOTALL)
+        if json_match:
+            raw = json_match.group()
+
     if raw.startswith("```"):
         raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
 
